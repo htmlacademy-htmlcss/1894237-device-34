@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -9,7 +10,7 @@
       <a href=""><img src="images/logo-black.svg" width="145" height="36" alt="Логотип DEVICE" class="logo-black"></a>
         <div class="navigation-user">
           <form class="navigation-user-form-search" action="https://echo.htmlacademy.ru/" method="POST">
-            <input type="search" name="product-search" placeholder="Текст поиска">
+            <input class="search-text" type="search" name="product-search" placeholder="Текст поиска">
             <button class="button" type="submit">Найти</button>
           </form>
           <ul>
@@ -46,7 +47,7 @@
     </header>
     <main class="main-inner">
       <header class="inner-header">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="catalog-header">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -61,7 +62,7 @@
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <h3>Фильтр:</h3>
+        <h3 class="header-filter">Фильтр:</h3>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -100,13 +101,13 @@
               Нет
             </label>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button-show" type="submit">Показать</button>
         </form>
-        <h3>Сортировка</h3>
+        <h3 class="sorting-header">Сортировка</h3>
         <select class="select-option" aria-label="Сортировка">
-          <option value="popular">Популярные</option>
-          <option value="cheap">Дешевые</option>
-          <option value="expensive">Дорогие</option>
+          <option class="select-option" value="popular">Популярные</option>
+          <option class="select-option" value="cheap">Дешевые</option>
+          <option class="select-option" value="expensive">Дорогие</option>
         </select>
         <span class="visually-hidden">Промотать вверх</span>
         <span class="visually-hidden">Промотать вниз</span>
@@ -140,7 +141,7 @@
             <b class="product-card-price">1 500 ₽</b>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <button class="button-pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link">
@@ -174,7 +175,7 @@
       <section class="footer-contacts-text-adress">
         <a href=""><img src="images/logo-yellow.svg" width="145" height="36" alt="Логотип DEVICE" class="logo-yellow"></a>
           <address class="footer-contacts-adress-text">
-             <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+             <p class="contacts-address-text-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
       </section>
       <section class="footer-advantage">
@@ -185,7 +186,7 @@
           <li class="footer-advantage-item">
             <h3>Гарантия</h3>
           </li>
-          <li class="footer-advantege-item">
+          <li class="footer-advantage-item">
             <h3>Контакты</h3>
           </li>
         </ul>
@@ -193,21 +194,21 @@
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-icons-social-networks" href="#">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>         
         </ul>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-icons-social-networks" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>         
         </ul>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-icons-social-networks" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>         
