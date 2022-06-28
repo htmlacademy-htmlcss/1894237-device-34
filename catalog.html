@@ -63,47 +63,49 @@
         </header>
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-          <h3 class="header-filter visually-hidden">Фильтр:</h3>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость</legend>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Черный" checked>
-                Черный
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Белый" checked>
-                Белый
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Синий">
-                Синий
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Красный">
-                Красный
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Розовый">
-                Розовый
-              </label>
-            </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluethooth</legend>
-              <label class="control">
-                <input class="control-input" type="radio" name="product-property" checked>
-                Есть
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="product-property">
-                Нет
-              </label>
-            </fieldset>
-            <button class="button-show" type="submit">Показать</button>
-          </form>
+          <div class="catalog-filter-blog">
+            <h3 class="header-filter">Фильтр:</h3>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group-price">
+                <legend class="catalog-filter-title-price">Стоимость</legend>
+              </fieldset>
+              <fieldset class="catalog-filter-group-color">
+                <legend class="catalog-filter-title-color">Цвет</legend>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Черный" checked>
+                  Черный
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Белый" checked>
+                  Белый
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Синий">
+                  Синий
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Красный">
+                  Красный
+                </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Розовый">
+                  Розовый
+                </label>
+              </fieldset>
+              <fieldset class="catalog-filter-group-bluethooth">
+                <legend class="catalog-filter-title-bluethooth">Bluethooth</legend>
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-property" checked>
+                  Есть
+                </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-property">
+                  Нет
+                </label>
+              </fieldset>
+              <button class="button-show" type="submit">Показать</button>
+            </form>
+          </div>
           <div class="catalog-right-column">
             <h3 class="sorting-header">Сортировка</h3>
             <select class="select-option" aria-label="Сортировка">
@@ -118,29 +120,30 @@
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/amateur_selfie_stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <h3 class="product-card-title">Любительская селфи палка</h3>
+                  <span class="product-card-price">500 ₽</span>
                 </a>
-                <b class="product-card-price">500 ₽</b>
+                 
               </li>
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/proffesional_selfie_stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                  <span class="product-card-price">1 500 ₽</span>
                 </a>
-                <b class="product-card-price">1 500 ₽</b>
               </li>
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/unsinkable_selfie_stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                   <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                  <span class="product-card-price">2 500 ₽</span>
                 </a>
-                <b class="product-card-price">2 500 ₽</b>
               </li>
               <li class="product-card-item">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/selfie_stick_hand.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
                   <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
+                  <span class="product-card-price">1 500 ₽</span>
                 </a>
-                <b class="product-card-price">1 500 ₽</b>
               </li>
             </ul>
             <div class="container-button-pagination-show-more">
