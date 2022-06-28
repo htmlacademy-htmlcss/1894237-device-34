@@ -758,15 +758,36 @@ li {
 }
 
 .catalog-filter {
-  width: 320px;
-  margin-left: 140px;
-  margin-right: 40px;
   flex-direction: column;
   display: flex;
 }
 
+.catalog-filter-blog {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin-left: 60px;
+}
+
 .catalog-right-column {
   width: 840px;
+  margin-top: 35px;
+}
+
+.catalog-filter-group-price {
+  margin-top: 72px;
+}
+
+.catalog-filter-group-color {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+}
+
+.catalog-filter-group-bluethooth {
+  display: flex;
+  flex-direction: column;
+  margin-top: 47px;
 }
 
 .catalog-header {
@@ -791,12 +812,21 @@ li {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
+}
+
+.control {
+  margin-top: 18px;
 }
 
 .control-input {
@@ -849,6 +879,7 @@ li {
 .catalog-filter-group {
   display: flex;
   flex-direction: column;
+  width: 200px;
 }
 
 .button-show {
@@ -861,6 +892,7 @@ li {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #FFE17F;
+  margin-top: 46px;
 }
 
 .blog-button-pagination-show-more {
@@ -888,8 +920,9 @@ li {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: inline-block;
   width: 150px;
+  margin-left: 40px;
 }
 
 .select-option {
@@ -899,7 +932,7 @@ li {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  display: flex;
+  display: inline-block;
   margin: 0;
   margin-bottom: 20px;
   margin-top: 20px;
